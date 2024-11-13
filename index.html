@@ -1,3 +1,84 @@
-<h1>Titre Groupe</h1>
 
-<p>Ceci est un test</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Widget</title>
+
+  <!-- Lien vers Bootstrap via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Lien vers la police Kanit via Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Lien vers le fichier CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="titlebar">
+    <span id="title-text">WidLight</span>
+    <div id="titlebar-buttons">
+      <button class="titlebar-button" id="minimize"></button>
+      <button class="titlebar-button" id="resize"></button>
+      <button class="titlebar-button" id="close"></button>
+    </div>
+  </div>
+
+<!-- Bouton pour afficher la barre latérale !!!!! -->
+<button class="btn btn-primary m-3 d-none d-md-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">W</button>
+
+  <!-- Bootstrap  Sidebar -->
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasScrollingLabel">WidLight</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link active">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a href="perso.html" class="nav-link">Personnalisation</a>
+        </li>
+        <li class="nav-item">
+          <a href="theme.html" class="nav-link">Thèmes</a>
+        </li>
+        <li class="nav-item">
+          <a href="profile.html" class="nav-link">Profiles</a>
+        </li>
+        <li class="nav-item">
+          <a href="reglage.hmtl" class="nav-link">Reglages</a>
+        </li>
+        <li class="nav-item">
+          <a href="widget.html" class="nav-link">WIDGET</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="div-boutton">
+    <button type="button" class="btn btn-secondary" disabled>B</button>
+    <button type="button" class="btn btn-secondary" disabled>B</button>
+    <button type="button" class="btn btn-secondary" disabled>B</button>
+    <button type="button" class="btn btn-secondary" disabled>B</button>
+    <button type="button" class="btn btn-secondary" disabled>B</button>
+    <button type="button" class="btn btn-secondary" disabled>B</button>
+    <button type="button" class="btn btn-secondary" disabled>B</button>
+    <button type="button" class="btn btn-secondary" disabled>B</button>
+    <button type="button" class="btn btn-secondary" disabled>B</button>
+  </div>
+
+  <!-- Scripts Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Scripts personnalisés -->
+  <script src="scripts.js"></script>
+  <script src="renderer.js"></script>
+
+</body>
+</html>
+
+
+
